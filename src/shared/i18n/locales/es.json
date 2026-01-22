@@ -1,0 +1,202 @@
+{
+  "navigation": {
+    "title": "Portafolio",
+    "home": "Inicio",
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "title": "Senior Software",
+    "subtitle": "Engineer",
+    "description": "Creo experiencias digitales excepcionales con tecnologías web modernas, especializándome en  Java, Pyhton, NodeJS, Angular, React, TypeScript y arquitecturas escalables.",
+    "getInTouch": "Contáctame",
+    "downloadResume": "Descargar CV"
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "subtitle": "Apasionado por crear experiencias de usuario excepcionales a través de código limpio y soluciones innovadoras",
+    "myJourney": "Mi Trayectoria",
+    "description1": "Con más de 5 años de experiencia en desarrollo frontend, he tenido el privilegio de trabajar con startups y empresas establecidas para construir aplicaciones web escalables y centradas en el usuario que sirven a millones de usuarios en todo el mundo.",
+    "description2": "Mi experiencia se centra en el ecosistema React, TypeScript y tecnologías web modernas. Me apasiona la arquitectura limpia, la optimización del rendimiento y la creación de bases de código mantenibles que resistan el paso del tiempo.",
+    "description3": "Cuando no estoy programando, me encontrarás contribuyendo a proyectos de código abierto, mentorizando desarrolladores junior, o explorando las últimas tendencias en desarrollo web y diseño de experiencia de usuario.",
+    "whatDrivesMe": "Lo que me Motiva",
+    "values": {
+      "cleanCode": {
+        "title": "Código Limpio",
+        "description": "Escribir código mantenible y legible que siga las mejores prácticas y estándares de la industria."
+      },
+      "userExperience": {
+        "title": "Experiencia de Usuario",
+        "description": "Crear interfaces intuitivas que deleiten a los usuarios y resuelvan problemas del mundo real."
+      },
+      "continuousLearning": {
+        "title": "Aprendizaje Continuo",
+        "description": "Mantenerme actualizado con las últimas tecnologías y mejorar continuamente mis habilidades."
+      }
+    },
+    "stats": {
+      "experience": "Años de Experiencia",
+      "projects": "Proyectos Completados",
+      "certifications": "Certificaciones",
+      "coffee": "Tazas de Café"
+    }
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "subtitle": "Un recorrido por mi carrera profesional y el impacto que he generado",
+    "keyAchievements": "Logros Clave:",
+    "technologiesUsed": "Tecnologías Utilizadas:",
+    "present": "Presente",
+    "experiences": {
+      "techInnovators": {
+        "company": "Tech Innovators Inc.",
+        "position": "Desarrollador React Senior",
+        "location": "San Francisco, CA",
+        "description": "Lideré el desarrollo frontend para aplicaciones empresariales que sirven a más de 100K usuarios",
+        "achievements": [
+          "Reduje el tamaño del bundle en un 40% mediante división de código y optimización",
+          "Implementé arquitectura de micro-frontends reduciendo el tiempo de despliegue en un 60%",
+          "Mentoricé a 5 desarrolladores junior y establecí procesos de revisión de código",
+          "Construí una librería de componentes reutilizables adoptada en 8 proyectos diferentes"
+        ]
+      },
+      "digitalSolutions": {
+        "company": "Digital Solutions Ltd.",
+        "position": "Desarrollador Full Stack",
+        "location": "Nueva York, NY",
+        "description": "Desarrollé y mantuve múltiples proyectos de clientes usando tecnologías web modernas",
+        "achievements": [
+          "Construí más de 12 aplicaciones web responsivas desde el concepto hasta el despliegue",
+          "Mejoré el rendimiento de aplicaciones en un 50% mediante técnicas de optimización",
+          "Integré APIs de terceros y pasarelas de pago para soluciones de comercio electrónico",
+          "Colaboré con el equipo de diseño para implementar componentes UI pixel-perfect"
+        ]
+      },
+      "startupXYZ": {
+        "company": "StartupXYZ",
+        "position": "Desarrollador Frontend",
+        "location": "Austin, TX",
+        "description": "Startup en etapa temprana enfocada en construir productos SaaS innovadores",
+        "achievements": [
+          "Desarrollé MVP que aseguró $2M en financiación Serie A",
+          "Implementé características en tiempo real usando tecnología WebSocket",
+          "Creé sistema de diseño responsivo usado en todos los productos de la empresa",
+          "Optimicé SEO resultando en un aumento del 200% en tráfico orgánico"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Una muestra de mi trabajo reciente y las tecnologías que he dominado",
+    "filters": {
+      "all": "Todos los Proyectos",
+      "web": "Apps Web",
+      "mobile": "Móvil",
+      "library": "Librerías",
+      "tool": "Herramientas"
+    },
+    "featured": "Destacado",
+    "viewAllGithub": "Ver Todos los Proyectos en GitHub",
+    "noProjects": "No se encontraron proyectos para la categoría seleccionada.",
+    "buttons": {
+      "code": "Código",
+      "live": "Demo"
+    },
+    "items": {
+      "ecommerce": {
+        "title": "Plataforma E-Commerce",
+        "description": "Solución e-commerce full-stack con React, Node.js y PostgreSQL",
+        "longDescription": "Una plataforma de comercio electrónico integral con autenticación de usuarios, catálogo de productos, carrito de compras, procesamiento de pagos y panel de administración. Construida con tecnologías modernas y mejores prácticas."
+      },
+      "taskManager": {
+        "title": "App de Gestión de Tareas",
+        "description": "Gestión colaborativa de tareas con actualizaciones en tiempo real",
+        "longDescription": "Una aplicación moderna de gestión de tareas con colaboración en tiempo real, interfaz de arrastrar y soltar, gestión de equipos y capacidades de filtrado avanzadas."
+      },
+      "componentLibrary": {
+        "title": "Librería de Componentes React",
+        "description": "Componentes UI reutilizables con documentación Storybook",
+        "longDescription": "Una librería integral de componentes React con soporte TypeScript, documentación extensa y pruebas automatizadas. Incluye más de 50 componentes siguiendo principios de sistema de diseño."
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "subtitle": "Una visión integral de mi experiencia técnica y niveles de competencia",
+    "categories": {
+      "frontend": "Desarrollo Frontend",
+      "backend": "Desarrollo Backend",
+      "database": "Base de Datos y Almacenamiento",
+      "devops": "DevOps y Nube",
+      "mobile": "Desarrollo Móvil",
+      "design": "Diseño y UX",
+      "tools": "Herramientas y Utilidades"
+    },
+    "levels": {
+      "beginner": "Principiante",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado",
+      "expert": "Experto"
+    },
+    "alwaysLearning": {
+      "title": "Siempre Aprendiendo",
+      "description": "La tecnología evoluciona rápidamente, y yo también. Constantemente exploro nuevos frameworks, herramientas y metodologías para mantenerme a la vanguardia del desarrollo web y entregar soluciones de última generación."
+    }
+  },
+  "contact": {
+    "title": "Trabajemos Juntos",
+    "subtitle": "¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y discutir cómo podemos dar vida a tus ideas.",
+    "form": {
+      "title": "Envíame un mensaje",
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Gracias por tu mensaje! Te responderé pronto.",
+      "error": "Algo salió mal. Por favor intenta de nuevo más tarde.",
+      "validation": {
+        "nameRequired": "El nombre debe tener al menos 2 caracteres",
+        "emailInvalid": "Por favor ingresa un correo electrónico válido",
+        "subjectRequired": "El asunto debe tener al menos 5 caracteres",
+        "messageRequired": "El mensaje debe tener al menos 10 caracteres"
+      }
+    },
+    "info": {
+      "title": "Ponte en contacto",
+      "description1": "Siempre estoy abierto a discutir nuevas oportunidades, proyectos interesantes, o simplemente charlar sobre tecnología y desarrollo.",
+      "description2": "Ya seas una startup buscando construir tu MVP, una empresa establecida necesitando escalar tu frontend, o un desarrollador compañero queriendo colaborar, me encantaría escucharte."
+    },
+    "social": {
+      "title": "Conéctate conmigo",
+      "available": "Disponible para proyectos freelance y oportunidades de tiempo completo."
+    }
+  },
+  "footer": {
+    "title": "Portafolio",
+    "description": "Senior Software Engineer apasionado por crear experiencias digitales excepcionales con tecnologías web modernas y código limpio y mantenible.",
+    "quickLinks": "Enlaces Rápidos",
+    "connect": "Conectar",
+    "madeWith": "Hecho con",
+    "and": "y React",
+    "backToTop": "Volver arriba",
+    "copyright": "Senior Software Engineer."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "tryAgain": "Intentar de Nuevo",
+    "refreshPage": "Actualizar Página",
+    "errorBoundary": {
+      "title": "¡Ups! Algo salió mal",
+      "description": "Encontramos un error inesperado. Por favor intenta actualizar la página o contacta soporte si el problema persiste.",
+      "errorDetails": "Detalles del Error"
+    }
+  }
+}

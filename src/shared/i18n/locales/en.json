@@ -1,0 +1,202 @@
+{
+  "navigation": {
+    "title": "Portfolio",
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "title": "Senior Software",
+    "subtitle": "Engineer",
+    "description": "I craft exceptional digital experiences with modern web technologies, specializing in React, TypeScript, and scalable frontend architectures.",
+    "getInTouch": "Get In Touch",
+    "downloadResume": "Download Resume"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passionate about creating exceptional user experiences through clean code and innovative solutions",
+    "myJourney": "My Journey",
+    "description1": "With over 5 years of experience in frontend development, I've had the privilege of working with startups and established companies to build scalable, user-centric web applications that serve millions of users worldwide.",
+    "description2": "My expertise lies in React ecosystem, TypeScript, and modern web technologies. I'm passionate about clean architecture, performance optimization, and creating maintainable codebases that stand the test of time.",
+    "description3": "When I'm not coding, you'll find me contributing to open source projects, mentoring junior developers, or exploring the latest trends in web development and user experience design.",
+    "whatDrivesMe": "What Drives Me",
+    "values": {
+      "cleanCode": {
+        "title": "Clean Code",
+        "description": "Writing maintainable, readable code that follows best practices and industry standards."
+      },
+      "userExperience": {
+        "title": "User Experience",
+        "description": "Creating intuitive interfaces that delight users and solve real-world problems."
+      },
+      "continuousLearning": {
+        "title": "Continuous Learning",
+        "description": "Staying updated with the latest technologies and continuously improving my skills."
+      }
+    },
+    "stats": {
+      "experience": "Years of Experience",
+      "projects": "Projects Completed",
+      "certifications": "Certifications",
+      "coffee": "Cups of Coffee"
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "A journey through my professional career and the impact I've made",
+    "keyAchievements": "Key Achievements:",
+    "technologiesUsed": "Technologies Used:",
+    "present": "Present",
+    "experiences": {
+      "techInnovators": {
+        "company": "Tech Innovators Inc.",
+        "position": "Senior Software Developer",
+        "location": "San Francisco, CA",
+        "description": "Led frontend development for enterprise applications serving 100K+ users",
+        "achievements": [
+          "Reduced bundle size by 40% through code splitting and optimization",
+          "Implemented micro-frontend architecture reducing deployment time by 60%",
+          "Mentored 5 junior developers and established code review processes",
+          "Built reusable component library adopted across 8 different projects"
+        ]
+      },
+      "digitalSolutions": {
+        "company": "Digital Solutions Ltd.",
+        "position": "Full Stack Developer",
+        "location": "New York, NY",
+        "description": "Developed and maintained multiple client projects using modern web technologies",
+        "achievements": [
+          "Built 12+ responsive web applications from concept to deployment",
+          "Improved application performance by 50% through optimization techniques",
+          "Integrated third-party APIs and payment gateways for e-commerce solutions",
+          "Collaborated with design team to implement pixel-perfect UI components"
+        ]
+      },
+      "startupXYZ": {
+        "company": "StartupXYZ",
+        "position": "Frontend Developer",
+        "location": "Austin, TX",
+        "description": "Early-stage startup focused on building innovative SaaS products",
+        "achievements": [
+          "Developed MVP that secured $2M in Series A funding",
+          "Implemented real-time features using WebSocket technology",
+          "Created responsive design system used across all company products",
+          "Optimized SEO resulting in 200% increase in organic traffic"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A showcase of my recent work and the technologies I've mastered",
+    "filters": {
+      "all": "All Projects",
+      "web": "Web Apps",
+      "mobile": "Mobile",
+      "library": "Libraries",
+      "tool": "Tools"
+    },
+    "featured": "Featured",
+    "viewAllGithub": "View All Projects on GitHub",
+    "noProjects": "No projects found for the selected category.",
+    "buttons": {
+      "code": "Code",
+      "live": "Live"
+    },
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "description": "Full-stack e-commerce solution with React, Node.js, and PostgreSQL",
+        "longDescription": "A comprehensive e-commerce platform featuring user authentication, product catalog, shopping cart, payment processing, and admin dashboard. Built with modern technologies and best practices."
+      },
+      "taskManager": {
+        "title": "Task Management App",
+        "description": "Collaborative task management with real-time updates",
+        "longDescription": "A modern task management application with real-time collaboration, drag-and-drop interface, team management, and advanced filtering capabilities."
+      },
+      "componentLibrary": {
+        "title": "React Component Library",
+        "description": "Reusable UI components with Storybook documentation",
+        "longDescription": "A comprehensive React component library with TypeScript support, extensive documentation, and automated testing. Includes 50+ components following design system principles."
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "A comprehensive overview of my technical expertise and proficiency levels",
+    "categories": {
+      "frontend": "Frontend Development",
+      "backend": "Backend Development",
+      "database": "Database & Storage",
+      "devops": "DevOps & Cloud",
+      "mobile": "Mobile Development",
+      "design": "Design & UX",
+      "tools": "Tools & Utilities"
+    },
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    },
+    "alwaysLearning": {
+      "title": "Always Learning",
+      "description": "Technology evolves rapidly, and so do I. I'm constantly exploring new frameworks, tools, and methodologies to stay at the forefront of web development and deliver cutting-edge solutions."
+    }
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Have a project in mind? I'd love to hear about it and discuss how we can bring your ideas to life.",
+    "form": {
+      "title": "Send me a message",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you for your message! I'll get back to you soon.",
+      "error": "Something went wrong. Please try again later.",
+      "validation": {
+        "nameRequired": "Name must be at least 2 characters long",
+        "emailInvalid": "Please enter a valid email address",
+        "subjectRequired": "Subject must be at least 5 characters long",
+        "messageRequired": "Message must be at least 10 characters long"
+      }
+    },
+    "info": {
+      "title": "Get in touch",
+      "description1": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and development.",
+      "description2": "Whether you're a startup looking to build your MVP, an established company needing to scale your frontend, or a fellow developer wanting to collaborate, I'd love to hear from you."
+    },
+    "social": {
+      "title": "Connect with me",
+      "available": "Available for freelance projects and full-time opportunities."
+    }
+  },
+  "footer": {
+    "title": "Portfolio",
+    "description": "Senior Software Engineer passionate about creating exceptional digital experiences with modern web technologies and clean, maintainable code.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "madeWith": "Made with",
+    "and": "and React",
+    "backToTop": "Back to top",
+    "copyright": "Senior Software Engineer."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "tryAgain": "Try Again",
+    "refreshPage": "Refresh Page",
+    "errorBoundary": {
+      "title": "Oops! Something went wrong",
+      "description": "We encountered an unexpected error. Please try refreshing the page or contact support if the problem persists.",
+      "errorDetails": "Error Details"
+    }
+  }
+}
