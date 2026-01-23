@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Heart, ArrowUp } from 'lucide-react';
 import { SOCIAL_LINKS } from '@/shared/constants/navigation';
 import { Button } from '@/presentation/components/atoms/Button/Button';

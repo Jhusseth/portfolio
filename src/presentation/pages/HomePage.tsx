@@ -12,7 +12,7 @@ import { useLanguage } from '@/shared/hooks/useLanguage';
  * Main homepage component containing all sections
  */
 export const HomePage: React.FC = () => {
-  const { t, currentLanguage } = useLanguage();
+  const { currentLanguage } = useLanguage();
 
   const title =
     currentLanguage === 'es'

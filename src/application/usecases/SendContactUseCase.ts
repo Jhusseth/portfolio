@@ -1,5 +1,5 @@
 import type { ContactSubmission } from '@/domain/entities/Contact';
-import type { ContactService, ValidationResult } from '@/domain/services/ContactService';
+import type { ContactService } from '@/domain/services/ContactService';
 
 /**
  * Use case for handling contact form submissions
@@ -38,6 +38,7 @@ export class SendContactUseCase {
         message: 'Message sent successfully!',
       };
     } catch (error) {
+      console.error('Error sending contact message:', error);
       return {
         success: false,
         errors: [

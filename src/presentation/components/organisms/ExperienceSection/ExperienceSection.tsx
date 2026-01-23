@@ -54,7 +54,7 @@ export const ExperienceSection: React.FC = () => {
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-purple-500 hidden md:block" />
 
             <div className="space-y-12">
-              {experiences.map((experience, index) => (
+              {experiences.map((experience) => (
                 <motion.div key={experience.id} variants={fadeInUp} className="relative">
                   {/* Timeline Dot */}
                   <div className="absolute left-6 w-4 h-4 bg-primary-500 rounded-full border-4 border-white dark:border-gray-900 shadow-lg hidden md:block" />
