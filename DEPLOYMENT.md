@@ -22,7 +22,7 @@ This guide covers how to deploy your Senior Software Portfolio to GitHub Pages a
 Go to your repository Settings > Secrets and variables > Actions, and add:
 
 - `VITE_EMAILJS_SERVICE_ID`: Your EmailJS service ID
-- `VITE_EMAILJS_TEMPLATE_ID`: Your EmailJS template ID  
+- `VITE_EMAILJS_TEMPLATE_ID`: Your EmailJS template ID
 - `VITE_EMAILJS_PUBLIC_KEY`: Your EmailJS public key
 
 ### 3. Enable GitHub Pages
@@ -36,11 +36,13 @@ Go to your repository Settings > Secrets and variables > Actions, and add:
 Update these files with your information:
 
 **vite.config.ts**:
+
 ```typescript
 base: '/portfolio/',
 ```
 
 **package.json**:
+
 ```json
 "homepage": "https://jhusseth.github.io/portfolio"
 ```
@@ -56,6 +58,7 @@ base: '/portfolio/',
 ### 2. Create Email Template
 
 Create a template with these variables:
+
 - `{{from_name}}` - Sender's name
 - `{{from_email}}` - Sender's email
 - `{{subject}}` - Email subject
@@ -65,7 +68,7 @@ Create a template with these variables:
 ### 3. Get Credentials
 
 - **Service ID**: Found in EmailJS dashboard > Email Services
-- **Template ID**: Found in EmailJS dashboard > Email Templates  
+- **Template ID**: Found in EmailJS dashboard > Email Templates
 - **Public Key**: Found in EmailJS dashboard > Account > API Keys
 
 ## 🌐 Custom Domain Setup
@@ -73,6 +76,7 @@ Create a template with these variables:
 ### 1. Add CNAME File
 
 Create `public/CNAME` with your domain:
+
 ```
 yourdomain.com
 ```
@@ -80,6 +84,7 @@ yourdomain.com
 ### 2. Update GitHub Workflow
 
 In `.github/workflows/deploy.yml`, uncomment and update:
+
 ```yaml
 cname: yourdomain.com
 ```
@@ -89,14 +94,16 @@ cname: yourdomain.com
 Add these DNS records with your domain provider:
 
 **For apex domain (yourdomain.com)**:
+
 ```
 A    185.199.108.153
-A    185.199.109.153  
+A    185.199.109.153
 A    185.199.110.153
 A    185.199.111.153
 ```
 
 **For www subdomain**:
+
 ```
 CNAME    jhusseth.github.io
 ```
@@ -104,6 +111,7 @@ CNAME    jhusseth.github.io
 ### 4. Update URLs
 
 Update all instances of URLs in:
+
 - `index.html` (meta tags)
 - `public/sitemap.xml`
 - `README.md`
@@ -112,6 +120,7 @@ Update all instances of URLs in:
 ## 🔧 Environment Variables
 
 ### Development (.env.local)
+
 ```env
 VITE_EMAILJS_SERVICE_ID=your_service_id
 VITE_EMAILJS_TEMPLATE_ID=your_template_id
@@ -121,10 +130,11 @@ VITE_RESUME_URL_ES=https://drive.google.com/file/d/your-spanish-resume-id/view
 ```
 
 ### Production (GitHub Secrets)
+
 Set the same variables as GitHub repository secrets for automatic deployment:
 
 - `VITE_EMAILJS_SERVICE_ID`: Your EmailJS service ID
-- `VITE_EMAILJS_TEMPLATE_ID`: Your EmailJS template ID  
+- `VITE_EMAILJS_TEMPLATE_ID`: Your EmailJS template ID
 - `VITE_EMAILJS_PUBLIC_KEY`: Your EmailJS public key
 - `VITE_RESUME_URL_EN`: URL to your English resume/CV
 - `VITE_RESUME_URL_ES`: URL to your Spanish resume/CV
@@ -134,30 +144,35 @@ Set the same variables as GitHub repository secrets for automatic deployment:
 You can use different types of URLs for your resume:
 
 **Option 1: Google Drive (Recommended)**
+
 1. Upload your resume to Google Drive
 2. Right-click and select "Get link"
 3. Make sure it's set to "Anyone with the link can view"
 4. Use the full Google Drive URL
 
 **Option 2: GitHub Repository**
+
 ```env
 VITE_RESUME_URL_EN=https://github.com/yourusername/resume/raw/main/resume-en.pdf
 VITE_RESUME_URL_ES=https://github.com/yourusername/resume/raw/main/resume-es.pdf
 ```
 
 **Option 3: External Hosting**
+
 ```env
 VITE_RESUME_URL_EN=https://your-website.com/resume-en.pdf
 VITE_RESUME_URL_ES=https://your-website.com/resume-es.pdf
 ```
 
 **Option 4: Public Folder (Local)**
+
 ```env
 VITE_RESUME_URL_EN=/resume-en.pdf
 VITE_RESUME_URL_ES=/resume-es.pdf
 ```
 
 ### Production (GitHub Secrets)
+
 Set the same variables as GitHub repository secrets for automatic deployment.
 
 ## 📊 Performance Optimization
@@ -178,6 +193,7 @@ npx vite-bundle-analyzer dist
 ### 3. Lighthouse Testing
 
 Test your deployed site:
+
 1. Open Chrome DevTools
 2. Go to Lighthouse tab
 3. Run audit for Performance, Accessibility, Best Practices, SEO
@@ -189,6 +205,7 @@ Target scores: 90+ in all categories
 ### 1. Update Meta Tags
 
 In `src/presentation/pages/HomePage.tsx`, update:
+
 - Title and description
 - Open Graph tags
 - Twitter Card tags
@@ -197,6 +214,7 @@ In `src/presentation/pages/HomePage.tsx`, update:
 ### 2. Structured Data
 
 Update the JSON-LD in `index.html` with your information:
+
 ```json
 {
   "@context": "https://schema.org",
@@ -217,20 +235,24 @@ Update `public/sitemap.xml` with your domain and last modified dates.
 ### Common Issues
 
 **1. 404 on GitHub Pages**
+
 - Check that `base` in `vite.config.ts` matches your repository name
 - Ensure GitHub Pages is enabled and set to GitHub Actions
 
 **2. Contact Form Not Working**
+
 - Verify EmailJS credentials in GitHub Secrets
 - Check browser console for CORS errors
 - Test EmailJS configuration in their dashboard
 
 **3. Images Not Loading**
+
 - Ensure images are in `public/` directory
 - Use absolute paths starting with `/`
 - Check image file extensions and names
 
 **4. Build Failures**
+
 - Check TypeScript errors: `npm run type-check`
 - Fix linting issues: `npm run lint:fix`
 - Verify all dependencies are installed
@@ -256,12 +278,14 @@ npm run build
 The portfolio includes PWA capabilities:
 
 ### Features Included
+
 - Service Worker for caching
 - Web App Manifest
 - Offline support
 - Install prompt
 
 ### Testing PWA
+
 1. Build and serve the app
 2. Open Chrome DevTools > Application
 3. Check Service Workers and Manifest tabs
@@ -280,6 +304,7 @@ The GitHub Actions workflow automatically:
 ### Manual Deployment
 
 If needed, deploy manually:
+
 ```bash
 npm run build
 npm run deploy
@@ -296,6 +321,7 @@ npm run deploy
 ### Monitoring
 
 Consider adding:
+
 - Error tracking (Sentry)
 - Performance monitoring
 - User analytics

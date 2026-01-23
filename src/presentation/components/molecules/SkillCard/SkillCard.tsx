@@ -56,24 +56,20 @@ export const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
     >
       <Card className="p-4 hover:shadow-lg transition-shadow duration-300">
         <div className="flex items-center justify-between mb-3">
-          <h3 className="font-medium text-gray-900 dark:text-gray-100">
-            {skill.name}
-          </h3>
+          <h3 className="font-medium text-gray-900 dark:text-gray-100">{skill.name}</h3>
           <span className="text-sm text-gray-500 dark:text-gray-400">
             {skill.yearsOfExperience}y
           </span>
         </div>
-        
+
         <div className="mb-2">
           <div className="flex justify-between text-sm mb-1">
             <span className="text-gray-600 dark:text-gray-400">
               {t(`skills.levels.${skill.level}`)}
             </span>
-            <span className="text-gray-600 dark:text-gray-400">
-              {percentage}%
-            </span>
+            <span className="text-gray-600 dark:text-gray-400">{percentage}%</span>
           </div>
-          
+
           <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
             <motion.div
               className={`h-2 rounded-full ${colorClass}`}

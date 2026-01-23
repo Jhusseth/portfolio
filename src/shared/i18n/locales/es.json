@@ -137,20 +137,35 @@
       "live": "Demo"
     },
     "items": {
-      "ecommerce": {
-        "title": "Plataforma E-Commerce",
-        "description": "Solución e-commerce full-stack con React, Node.js y PostgreSQL",
-        "longDescription": "Una plataforma de comercio electrónico integral con autenticación de usuarios, catálogo de productos, carrito de compras, procesamiento de pagos y panel de administración. Construida con tecnologías modernas y mejores prácticas."
+      "foundationPlatform": {
+        "title": "Plataforma para Fundación de Mascotas",
+        "description": "Solución full-stack para gestión de adopciones y donaciones con Java Spring Boot y React",
+        "longDescription": "Plataforma integral para fundación de mascotas que incluye gestión de adopciones, registro de animales, sistema de donaciones, panel administrativo y base de datos PostgreSQL. Implementa autenticación segura, carga de imágenes a AWS S3 y notificaciones por email."
       },
-      "taskManager": {
-        "title": "App de Gestión de Tareas",
-        "description": "Gestión colaborativa de tareas con actualizaciones en tiempo real",
-        "longDescription": "Una aplicación moderna de gestión de tareas con colaboración en tiempo real, interfaz de arrastrar y soltar, gestión de equipos y capacidades de filtrado avanzadas."
+      "expenseTracker": {
+        "title": "Rastreador de Gastos Personales",
+        "description": "Aplicación de gestión financiera personal con análisis y reportes",
+        "longDescription": "Sistema de seguimiento de gastos personales con categorización automática, visualización de datos con gráficos interactivos, reportes mensuales y exportación a Excel. Desarrollado con arquitectura reactiva y base de datos MongoDB para almacenamiento flexible."
       },
-      "componentLibrary": {
-        "title": "Librería de Componentes React",
-        "description": "Componentes UI reutilizables con documentación Storybook",
-        "longDescription": "Una librería integral de componentes React con soporte TypeScript, documentación extensa y pruebas automatizadas. Incluye más de 50 componentes siguiendo principios de sistema de diseño."
+      "weddingInvitation": {
+        "title": "Invitación Digital de Boda",
+        "description": "Sistema de invitaciones digitales con confirmación de asistencia y gestión de eventos",
+        "longDescription": "Plataforma elegante para invitaciones de boda digitales con confirmación RSVP, galería de fotos, cronograma del evento, integración con Google Maps y gestión de lista de regalos. Diseño responsivo con animaciones CSS3 y backend Node.js."
+      },
+      "meliInventory": {
+        "title": "Sistema de Inventario Mercado Libre",
+        "description": "Automatización de inventario sincronizado con API de Mercado Libre",
+        "longDescription": "Herramienta de gestión de inventario que sincroniza automáticamente productos, precios y stock con Mercado Libre. Incluye notificaciones de ventas, análisis de productos más vendidos, actualización masiva y reportes de rentabilidad. Construido con Spring Boot y React."
+      },
+      "javaComparation": {
+        "title": "Herramienta de Comparación Java",
+        "description": "Análisis comparativo de versiones y características de Java",
+        "longDescription": "Aplicación web para comparar características, rendimiento y sintaxis entre diferentes versiones de Java (8, 11, 17, 21). Incluye ejemplos de código, benchmarks de rendimiento, guías de migración y mejores prácticas. Desarrollada con Spring Boot 3.x y Angular."
+      },
+      "logsECSLibrary": {
+        "title": "Librería de Logs para AWS ECS",
+        "description": "Librería Java para logging estructurado en contenedores ECS",
+        "longDescription": "Librería open-source para logging centralizado en aplicaciones Java ejecutándose en AWS ECS. Integra CloudWatch Logs, formato JSON estructurado, correlación de trazas distribuidas y métricas personalizadas. Compatible con Spring Boot y configuración automática."
       }
     }
   },

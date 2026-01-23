@@ -43,11 +43,11 @@ export const LanguageSelector: React.FC = () => {
         <span className="text-sm font-medium text-gray-700 dark:text-gray-300 hidden sm:block">
           {currentOption.code.toUpperCase()}
         </span>
-        <ChevronDown 
+        <ChevronDown
           className={cn(
-            "w-4 h-4 text-gray-600 dark:text-gray-400 transition-transform duration-200",
-            isOpen && "rotate-180"
-          )} 
+            'w-4 h-4 text-gray-600 dark:text-gray-400 transition-transform duration-200',
+            isOpen && 'rotate-180'
+          )}
         />
       </motion.button>
 
@@ -65,8 +65,8 @@ export const LanguageSelector: React.FC = () => {
                 key={language.code}
                 onClick={() => handleLanguageChange(language.code)}
                 className={cn(
-                  "w-full flex items-center gap-3 px-3 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200",
-                  currentLanguage === language.code && "bg-primary-50 dark:bg-primary-900/20"
+                  'w-full flex items-center gap-3 px-3 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200',
+                  currentLanguage === language.code && 'bg-primary-50 dark:bg-primary-900/20'
                 )}
                 whileHover={{ x: 4 }}
               >

@@ -27,13 +27,16 @@ export class GetExperienceUseCase {
    */
   async executeSkillsByCategory(): Promise<Record<SkillCategory, Skill[]>> {
     const skills = await this.experienceRepository.getAllSkills();
-    
-    return skills.reduce((acc, skill) => {
-      if (!acc[skill.category]) {
-        acc[skill.category] = [];
-      }
-      acc[skill.category]!.push(skill);
-      return acc;
-    }, {} as Record<SkillCategory, Skill[]>);
+
+    return skills.reduce(
+      (acc, skill) => {
+        if (!acc[skill.category]) {
+          acc[skill.category] = [];
+        }
+        acc[skill.category]!.push(skill);
+        return acc;
+      },
+      {} as Record<SkillCategory, Skill[]>
+    );
   }
 }

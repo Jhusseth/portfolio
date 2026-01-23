@@ -17,7 +17,10 @@ export class GetProjectsUseCase {
   /**
    * Executes the use case to get projects by category
    */
-  async executeByCategory(category: ProjectCategory, t?: (key: string) => string): Promise<Project[]> {
+  async executeByCategory(
+    category: ProjectCategory,
+    t?: (key: string) => string
+  ): Promise<Project[]> {
     return await this.projectRepository.getByCategory(category, t);
   }
 

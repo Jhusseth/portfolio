@@ -14,7 +14,7 @@ export const SOCIAL_LINKS = [
   {
     platform: 'github' as const,
     url: 'https://github.com/jhusseth',
-    username: '@yourusername',
+    username: '@jhusseth',
   },
   {
     platform: 'linkedin' as const,

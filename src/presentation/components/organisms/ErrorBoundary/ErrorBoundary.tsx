@@ -43,7 +43,8 @@ export class ErrorBoundary extends Component<Props, State> {
               ¡Ups! Algo salió mal
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              Encontramos un error inesperado. Por favor intenta actualizar la página o contacta soporte si el problema persiste.
+              Encontramos un error inesperado. Por favor intenta actualizar la página o contacta
+              soporte si el problema persiste.
             </p>
             {process.env.NODE_ENV === 'development' && this.state.error && (
               <details className="text-left mb-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
@@ -62,10 +63,7 @@ export class ErrorBoundary extends Component<Props, State> {
                 <RefreshCw className="w-4 h-4 mr-2" />
                 Intentar de Nuevo
               </Button>
-              <Button
-                variant="outline"
-                onClick={() => window.location.reload()}
-              >
+              <Button variant="outline" onClick={() => window.location.reload()}>
                 Actualizar Página
               </Button>
             </div>

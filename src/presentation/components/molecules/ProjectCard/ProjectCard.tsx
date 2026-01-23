@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import type { Project } from '@/domain/entities/Project';
 import { Card } from '@/presentation/components/atoms/Card/Card';
@@ -53,7 +52,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
         </div>
       </div>
-      
+
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
@@ -65,11 +64,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </span>
           )}
         </div>
-        
-        <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
-          {project.description}
-        </p>
-        
+
+        <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">{project.description}</p>
+
         <div className="flex flex-wrap gap-2">
           {project.technologies.slice(0, 4).map((tech) => (
             <span

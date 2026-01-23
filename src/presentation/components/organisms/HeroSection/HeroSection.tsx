@@ -32,19 +32,21 @@ export const HeroSection: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        <div
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float"
+          style={{ animationDelay: '2s' }}
+        />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          className="space-y-8"
-        >
+        <motion.div initial="hidden" animate="visible" className="space-y-8">
           {/* Greeting */}
           <motion.p
             variants={fadeInUp}
@@ -78,40 +80,31 @@ export const HeroSection: React.FC = () => {
             variants={fadeInUp}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Button
-              size="lg"
-              onClick={scrollToContact}
-              className="group"
-            >
+            <Button size="lg" onClick={scrollToContact} className="group">
               <Mail className="w-5 h-5 mr-2 group-hover:animate-bounce" />
               {t('hero.getInTouch')}
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={handleDownloadResume}
-            >
+            <Button variant="outline" size="lg" onClick={handleDownloadResume}>
               <Download className="w-5 h-5 mr-2" />
               {t('hero.downloadResume')}
             </Button>
           </motion.div>
 
           {/* Tech Stack Preview */}
-          <motion.div
-            variants={fadeInUp}
-            className="flex flex-wrap justify-center gap-4 mt-12"
-          >
-            {['Java', 'Python', 'NodeJS', 'Angular', 'React', 'TypeScript', 'AWS'].map((tech, index) => (
-              <motion.span
-                key={tech}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 1 + index * 0.1 }}
-                className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200/20 dark:border-gray-700/20"
-              >
-                {tech}
-              </motion.span>
-            ))}
+          <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-4 mt-12">
+            {['Java', 'Python', 'NodeJS', 'Angular', 'React', 'TypeScript', 'AWS'].map(
+              (tech, index) => (
+                <motion.span
+                  key={tech}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 1 + index * 0.1 }}
+                  className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200/20 dark:border-gray-700/20"
+                >
+                  {tech}
+                </motion.span>
+              )
+            )}
           </motion.div>
         </motion.div>
 
@@ -124,10 +117,7 @@ export const HeroSection: React.FC = () => {
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors duration-200"
           aria-label="Scroll to about section"
         >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
+          <motion.div animate={{ y: [0, 10, 0] }} transition={{ duration: 2, repeat: Infinity }}>
             <ChevronDown className="w-8 h-8" />
           </motion.div>
         </motion.button>

@@ -26,7 +26,7 @@ export const useLanguage = () => {
   };
 
   const getCurrentLanguageOption = (): LanguageOption => {
-    return LANGUAGES.find(lang => lang.code === currentLanguage) || LANGUAGES[0]!;
+    return LANGUAGES.find((lang) => lang.code === currentLanguage) || LANGUAGES[0]!;
   };
 
   return {

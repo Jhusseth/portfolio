@@ -47,13 +47,15 @@ export const ContactSection: React.FC = () => {
     website: Mail,
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    
+    setFormData((prev) => ({ ...prev, [name]: value }));
+
     // Clear error when user starts typing
     if (errors[name]) {
-      setErrors(prev => ({ ...prev, [name]: '' }));
+      setErrors((prev) => ({ ...prev, [name]: '' }));
     }
   };
 
@@ -74,8 +76,9 @@ export const ContactSection: React.FC = () => {
         setSubmitStatus('error');
         if (result.errors) {
           const newErrors: FormErrors = {};
-          result.errors.forEach(error => {
-            newErrors[error.field] = t(`contact.form.validation.${error.field}Required`) || error.message;
+          result.errors.forEach((error) => {
+            newErrors[error.field] =
+              t(`contact.form.validation.${error.field}Required`) || error.message;
           });
           setErrors(newErrors);
         }
@@ -94,7 +97,7 @@ export const ContactSection: React.FC = () => {
         <motion.div
           variants={staggerContainer}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={isInView ? 'visible' : 'hidden'}
           className="space-y-16"
         >
           {/* Section Header */}
@@ -125,9 +128,7 @@ export const ContactSection: React.FC = () => {
 
                 {submitStatus === 'error' && !Object.keys(errors).length && (
                   <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg dark:bg-red-900/20 dark:border-red-800">
-                    <p className="text-red-800 dark:text-red-200">
-                      {t('contact.form.error')}
-                    </p>
+                    <p className="text-red-800 dark:text-red-200">{t('contact.form.error')}</p>
                   </div>
                 )}
 
@@ -151,7 +152,7 @@ export const ContactSection: React.FC = () => {
                       required
                     />
                   </div>
-                  
+
                   <Input
                     label={t('contact.form.subject')}
                     name="subject"
@@ -160,7 +161,7 @@ export const ContactSection: React.FC = () => {
                     error={errors.subject}
                     required
                   />
-                  
+
                   <Textarea
                     label={t('contact.form.message')}
                     name="message"
@@ -171,12 +172,7 @@ export const ContactSection: React.FC = () => {
                     required
                   />
 
-                  <Button
-                    type="submit"
-                    size="lg"
-                    isLoading={isSubmitting}
-                    className="w-full"
-                  >
+                  <Button type="submit" size="lg" isLoading={isSubmitting} className="w-full">
                     <Send className="w-5 h-5 mr-2" />
                     {isSubmitting ? t('contact.form.sending') : t('contact.form.send')}
                   </Button>

@@ -20,10 +20,12 @@ A modern, professional portfolio website built with React 18, TypeScript, and Ta
 ## 🌐 Internationalization
 
 The portfolio supports two languages:
+
 - **English (en)** 🇺🇸 - Default language
 - **Spanish (es)** 🇪🇸 - Complete translation
 
 ### Language Features
+
 - **Automatic Detection**: Detects browser language preference
 - **Persistent Selection**: Remembers user's language choice
 - **Dynamic Content**: All text, labels, and messages are translated
@@ -31,7 +33,9 @@ The portfolio supports two languages:
 - **Validation Messages**: Form validation errors in selected language
 
 ### Language Selector
+
 Located in the header next to the theme toggle, featuring:
+
 - Flag icons for visual identification
 - Smooth dropdown animation
 - Current language indicator
@@ -67,28 +71,33 @@ src/
 ## 🛠️ Tech Stack
 
 ### Core
+
 - **React 18** - UI library with concurrent features
 - **TypeScript** - Type safety and developer experience
 - **Vite** - Fast build tool and dev server
 - **Tailwind CSS** - Utility-first CSS framework
 
 ### Internationalization
+
 - **react-i18next** - React integration for i18next
 - **i18next** - Internationalization framework
 - **i18next-browser-languagedetector** - Automatic language detection
 
 ### Animation & UI
+
 - **Framer Motion** - Smooth animations and transitions
 - **Lucide React** - Beautiful, customizable icons
 - **React Helmet Async** - SEO and meta tag management
 
 ### Development
+
 - **ESLint** - Code linting and quality
 - **Prettier** - Code formatting
 - **Husky** - Git hooks for quality gates
 - **Conventional Commits** - Standardized commit messages
 
 ### Deployment
+
 - **GitHub Pages** - Static site hosting
 - **GitHub Actions** - CI/CD pipeline
 - **PWA** - Progressive Web App capabilities
@@ -96,28 +105,33 @@ src/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/jhusseth/portfolio.git
    cd portfolio
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
+
    ```bash
    cp .env.example .env
    ```
-   
+
    Fill in your EmailJS credentials and resume URLs:
+
    ```env
    VITE_EMAILJS_SERVICE_ID=your_service_id
    VITE_EMAILJS_TEMPLATE_ID=your_template_id
@@ -127,6 +141,7 @@ src/
    ```
 
 4. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -139,6 +154,7 @@ src/
 To add support for additional languages:
 
 1. **Create translation file**
+
    ```bash
    # Add new language file (e.g., French)
    touch src/shared/i18n/locales/fr.json
@@ -148,6 +164,7 @@ To add support for additional languages:
    Copy the structure from `en.json` and translate all values.
 
 3. **Update language configuration**
+
    ```typescript
    // src/shared/hooks/useLanguage.ts
    export const LANGUAGES: LanguageOption[] = [
@@ -158,10 +175,11 @@ To add support for additional languages:
    ```
 
 4. **Import in i18n configuration**
+
    ```typescript
    // src/shared/i18n/index.ts
    import frTranslations from './locales/fr.json';
-   
+
    const resources = {
      en: { translation: enTranslations },
      es: { translation: esTranslations },
@@ -187,6 +205,7 @@ To add support for additional languages:
 ### Content Sections
 
 Each section is a separate component in `src/presentation/components/organisms/`:
+
 - `HeroSection` - Landing area with introduction
 - `AboutSection` - Personal story and stats
 - `ExperienceSection` - Professional timeline
@@ -212,6 +231,7 @@ All components automatically use the selected language through the `useLanguage`
    - `VITE_RESUME_URL_ES`
 
 3. **Push to main branch**
+
    ```bash
    git push origin main
    ```

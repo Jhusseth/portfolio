@@ -14,7 +14,7 @@ export const Navigation: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useLanguage();
-  
+
   const navigationItems = [
     { id: 'home', label: t('navigation.home'), href: '#home' },
     { id: 'about', label: t('navigation.about'), href: '#about' },
@@ -23,8 +23,8 @@ export const Navigation: React.FC = () => {
     { id: 'skills', label: t('navigation.skills'), href: '#skills' },
     { id: 'contact', label: t('navigation.contact'), href: '#contact' },
   ];
-  
-  const activeSection = useScrollSpy(navigationItems.map(item => item.id));
+
+  const activeSection = useScrollSpy(navigationItems.map((item) => item.id));
 
   useEffect(() => {
     const handleScroll = (): void => {
@@ -48,18 +48,13 @@ export const Navigation: React.FC = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/80 backdrop-blur-md shadow-lg dark:bg-gray-900/80'
-          : 'bg-transparent'
+        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-lg dark:bg-gray-900/80' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex-shrink-0"
-          >
+          <motion.div whileHover={{ scale: 1.05 }} className="flex-shrink-0">
             <span className="text-2xl font-bold text-gray-900 dark:text-white">
               {t('navigation.title')}
             </span>
@@ -95,11 +90,7 @@ export const Navigation: React.FC = () => {
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 aria-label="Toggle mobile menu"
               >
-                {isMobileMenuOpen ? (
-                  <X className="w-6 h-6" />
-                ) : (
-                  <Menu className="w-6 h-6" />
-                )}
+                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </Button>
             </div>
           </div>

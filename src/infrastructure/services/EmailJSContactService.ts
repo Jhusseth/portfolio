@@ -1,6 +1,10 @@
 import emailjs from '@emailjs/browser';
 import type { ContactSubmission } from '@/domain/entities/Contact';
-import type { ContactService, ValidationResult, ValidationError } from '@/domain/services/ContactService';
+import type {
+  ContactService,
+  ValidationResult,
+  ValidationError,
+} from '@/domain/services/ContactService';
 
 /**
  * EmailJS implementation of ContactService
@@ -30,12 +34,7 @@ export class EmailJSContactService implements ContactService {
     };
 
     try {
-      await emailjs.send(
-        this.serviceId,
-        this.templateId,
-        templateParams,
-        this.publicKey
-      );
+      await emailjs.send(this.serviceId, this.templateId, templateParams, this.publicKey);
     } catch (error) {
       console.error('Failed to send email:', error);
       throw new Error('Failed to send message');

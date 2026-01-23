@@ -39,9 +39,7 @@ export const Footer: React.FC = () => {
           {/* Brand & Description */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">{t('footer.title')}</h3>
-            <p className="text-gray-400 leading-relaxed">
-              {t('footer.description')}
-            </p>
+            <p className="text-gray-400 leading-relaxed">{t('footer.description')}</p>
           </div>
 
           {/* Quick Links */}
@@ -76,16 +74,16 @@ export const Footer: React.FC = () => {
                 </a>
               ))}
             </div>
-            <p className="text-gray-400 text-sm">
-              {t('contact.social.available')}
-            </p>
+            <p className="text-gray-400 text-sm">{t('contact.social.available')}</p>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-gray-400 text-sm">
-            <span>© {new Date().getFullYear()} {t('footer.copyright')}</span>
+            <span>
+              © {new Date().getFullYear()} {t('footer.copyright')}
+            </span>
             <span>{t('footer.madeWith')}</span>
             <Heart className="w-4 h-4 text-red-500 fill-current" />
             <span>{t('footer.and')}</span>

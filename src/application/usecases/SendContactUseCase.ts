@@ -13,7 +13,7 @@ export class SendContactUseCase {
   async execute(submission: Partial<ContactSubmission>): Promise<ContactResult> {
     // Validate the submission
     const validation = this.contactService.validateSubmission(submission);
-    
+
     if (!validation.isValid) {
       return {
         success: false,
@@ -32,7 +32,7 @@ export class SendContactUseCase {
       };
 
       await this.contactService.sendMessage(completeSubmission);
-      
+
       return {
         success: true,
         message: 'Message sent successfully!',

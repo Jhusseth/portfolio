@@ -22,8 +22,8 @@ export const formatDateRange = (startDate: Date, endDate?: Date): string => {
  */
 export const calculateDuration = (startDate: Date, endDate?: Date): string => {
   const end = endDate || new Date();
-  const diffInMonths = (end.getFullYear() - startDate.getFullYear()) * 12 + 
-                      (end.getMonth() - startDate.getMonth());
+  const diffInMonths =
+    (end.getFullYear() - startDate.getFullYear()) * 12 + (end.getMonth() - startDate.getMonth());
 
   if (diffInMonths < 12) {
     return `${diffInMonths} month${diffInMonths !== 1 ? 's' : ''}`;
@@ -52,7 +52,7 @@ export const formatSkillLevel = (level: string): string => {
 export const getInitials = (name: string): string => {
   return name
     .split(' ')
-    .map(word => word.charAt(0))
+    .map((word) => word.charAt(0))
     .join('')
     .toUpperCase()
     .slice(0, 2);

@@ -35,7 +35,7 @@ export const ExperienceSection: React.FC = () => {
         <motion.div
           variants={staggerContainer}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={isInView ? 'visible' : 'hidden'}
           className="space-y-16"
         >
           {/* Section Header */}
@@ -55,11 +55,7 @@ export const ExperienceSection: React.FC = () => {
 
             <div className="space-y-12">
               {experiences.map((experience, index) => (
-                <motion.div
-                  key={experience.id}
-                  variants={fadeInUp}
-                  className="relative"
-                >
+                <motion.div key={experience.id} variants={fadeInUp} className="relative">
                   {/* Timeline Dot */}
                   <div className="absolute left-6 w-4 h-4 bg-primary-500 rounded-full border-4 border-white dark:border-gray-900 shadow-lg hidden md:block" />
 
@@ -89,9 +85,13 @@ export const ExperienceSection: React.FC = () => {
                           <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-4">
                             <div className="flex items-center gap-1">
                               <Calendar className="w-4 h-4" />
-                              <span>{formatDateRange(experience.startDate, experience.endDate)}</span>
+                              <span>
+                                {formatDateRange(experience.startDate, experience.endDate)}
+                              </span>
                               <span className="text-gray-400">•</span>
-                              <span>{calculateDuration(experience.startDate, experience.endDate)}</span>
+                              <span>
+                                {calculateDuration(experience.startDate, experience.endDate)}
+                              </span>
                             </div>
                             <div className="flex items-center gap-1">
                               <MapPin className="w-4 h-4" />

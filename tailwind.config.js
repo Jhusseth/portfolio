@@ -5,7 +5,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+        sans: [
+          'Inter',
+          'SF Pro Display',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'system-ui',
+          'sans-serif',
+        ],
       },
       colors: {
         primary: {
@@ -35,7 +42,7 @@ export default {
         'slide-up': 'slideUp 0.5s ease-out',
         'slide-down': 'slideDown 0.5s ease-out',
         'scale-in': 'scaleIn 0.3s ease-out',
-        'float': 'float 6s ease-in-out infinite',
+        float: 'float 6s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -63,8 +70,8 @@ export default {
         xs: '2px',
       },
       spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
+        18: '4.5rem',
+        88: '22rem',
       },
     },
   },

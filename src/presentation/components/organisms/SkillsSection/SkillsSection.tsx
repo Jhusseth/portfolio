@@ -12,7 +12,9 @@ import { fadeInUp, staggerContainer } from '@/shared/utils/animations';
  * Skills matrix section with categorized skills
  */
 export const SkillsSection: React.FC = () => {
-  const [skillsByCategory, setSkillsByCategory] = useState<Record<SkillCategory, Skill[]>>({} as Record<SkillCategory, Skill[]>);
+  const [skillsByCategory, setSkillsByCategory] = useState<Record<SkillCategory, Skill[]>>(
+    {} as Record<SkillCategory, Skill[]>
+  );
   const [ref, isInView] = useIntersectionObserver({ threshold: 0.2 });
   const { t } = useLanguage();
 
@@ -43,7 +45,7 @@ export const SkillsSection: React.FC = () => {
         <motion.div
           variants={staggerContainer}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={isInView ? 'visible' : 'hidden'}
           className="space-y-16"
         >
           {/* Section Header */}
@@ -60,24 +62,16 @@ export const SkillsSection: React.FC = () => {
           <div className="space-y-12">
             {Object.entries(skillsByCategory).map(([category, skills]) => {
               if (!skills || skills.length === 0) return null;
-              
+
               return (
-                <motion.div
-                  key={category}
-                  variants={fadeInUp}
-                  className="space-y-6"
-                >
+                <motion.div key={category} variants={fadeInUp} className="space-y-6">
                   <h3 className="text-2xl font-semibold text-gray-900 dark:text-white text-center">
                     {categoryLabels[category as SkillCategory]}
                   </h3>
-                  
+
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                     {skills.map((skill, index) => (
-                      <SkillCard
-                        key={skill.id}
-                        skill={skill}
-                        index={index}
-                      />
+                      <SkillCard key={skill.id} skill={skill} index={index} />
                     ))}
                   </div>
                 </motion.div>

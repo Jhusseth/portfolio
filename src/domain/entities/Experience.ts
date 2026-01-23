@@ -27,6 +27,13 @@ export interface Skill {
   readonly iconUrl?: string;
 }
 
-export type SkillCategory = 'frontend' | 'backend' | 'database' | 'devops' | 'mobile' | 'design' | 'tools';
+export type SkillCategory =
+  | 'frontend'
+  | 'backend'
+  | 'database'
+  | 'devops'
+  | 'mobile'
+  | 'design'
+  | 'tools';
 
 export type SkillLevel = 'beginner' | 'intermediate' | 'advanced' | 'expert';

@@ -41,7 +41,7 @@ export const AboutSection: React.FC = () => {
         <motion.div
           variants={staggerContainer}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={isInView ? 'visible' : 'hidden'}
           className="space-y-16"
         >
           {/* Section Header */}
@@ -82,9 +82,7 @@ export const AboutSection: React.FC = () => {
                       <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">
                         {stat.value}
                       </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-400">
-                        {stat.label}
-                      </div>
+                      <div className="text-sm text-gray-600 dark:text-gray-400">{stat.label}</div>
                     </Card>
                   </motion.div>
                 ))}
@@ -109,9 +107,7 @@ export const AboutSection: React.FC = () => {
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
                     {value.title}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    {value.description}
-                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">{value.description}</p>
                 </motion.div>
               ))}
             </div>

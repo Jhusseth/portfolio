@@ -137,20 +137,35 @@
       "live": "Live"
     },
     "items": {
-      "ecommerce": {
-        "title": "E-Commerce Platform",
-        "description": "Full-stack e-commerce solution with React, Node.js, and PostgreSQL",
-        "longDescription": "A comprehensive e-commerce platform featuring user authentication, product catalog, shopping cart, payment processing, and admin dashboard. Built with modern technologies and best practices."
+      "foundationPlatform": {
+        "title": "Pet Foundation Platform",
+        "description": "Full-stack solution for adoption and donation management with Java Spring Boot and React",
+        "longDescription": "Comprehensive pet foundation platform featuring adoption management, animal registry, donation system, administrative dashboard and PostgreSQL database. Implements secure authentication, AWS S3 image uploads and email notifications."
       },
-      "taskManager": {
-        "title": "Task Management App",
-        "description": "Collaborative task management with real-time updates",
-        "longDescription": "A modern task management application with real-time collaboration, drag-and-drop interface, team management, and advanced filtering capabilities."
+      "expenseTracker": {
+        "title": "Personal Expense Tracker",
+        "description": "Personal financial management application with analytics and reports",
+        "longDescription": "Personal expense tracking system with automatic categorization, interactive data visualization with charts, monthly reports and Excel export. Developed with reactive architecture and MongoDB database for flexible storage."
       },
-      "componentLibrary": {
-        "title": "React Component Library",
-        "description": "Reusable UI components with Storybook documentation",
-        "longDescription": "A comprehensive React component library with TypeScript support, extensive documentation, and automated testing. Includes 50+ components following design system principles."
+      "weddingInvitation": {
+        "title": "Digital Wedding Invitation",
+        "description": "Digital invitation system with RSVP and event management",
+        "longDescription": "Elegant platform for digital wedding invitations with RSVP confirmation, photo gallery, event timeline, Google Maps integration and gift registry management. Responsive design with CSS3 animations and Node.js backend."
+      },
+      "meliInventory": {
+        "title": "Mercado Libre Inventory System",
+        "description": "Automated inventory synchronized with Mercado Libre API",
+        "longDescription": "Inventory management tool that automatically synchronizes products, prices and stock with Mercado Libre. Includes sales notifications, best-selling product analysis, bulk updates and profitability reports. Built with Spring Boot and React."
+      },
+      "javaComparation": {
+        "title": "Java Comparison Tool",
+        "description": "Comparative analysis of Java versions and features",
+        "longDescription": "Web application to compare features, performance and syntax across different Java versions (8, 11, 17, 21). Includes code examples, performance benchmarks, migration guides and best practices. Developed with Spring Boot 3.x and Angular."
+      },
+      "logsECSLibrary": {
+        "title": "AWS ECS Logging Library",
+        "description": "Java library for structured logging in ECS containers",
+        "longDescription": "Open-source library for centralized logging in Java applications running on AWS ECS. Integrates CloudWatch Logs, structured JSON format, distributed trace correlation and custom metrics. Compatible with Spring Boot and auto-configuration."
       }
     }
   },

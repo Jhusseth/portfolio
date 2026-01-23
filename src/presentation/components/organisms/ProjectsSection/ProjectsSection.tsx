@@ -43,7 +43,7 @@ export const ProjectsSection: React.FC = () => {
     if (activeFilter === 'all') {
       setFilteredProjects(projects);
     } else {
-      setFilteredProjects(projects.filter(project => project.category === activeFilter));
+      setFilteredProjects(projects.filter((project) => project.category === activeFilter));
     }
   }, [activeFilter, projects]);
 
@@ -53,7 +53,7 @@ export const ProjectsSection: React.FC = () => {
         <motion.div
           variants={staggerContainer}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={isInView ? 'visible' : 'hidden'}
           className="space-y-16"
         >
           {/* Section Header */}
@@ -100,13 +100,8 @@ export const ProjectsSection: React.FC = () => {
 
           {/* Empty State */}
           {filteredProjects.length === 0 && (
-            <motion.div
-              variants={fadeInUp}
-              className="text-center py-12"
-            >
-              <p className="text-gray-600 dark:text-gray-400 text-lg">
-                {t('projects.noProjects')}
-              </p>
+            <motion.div variants={fadeInUp} className="text-center py-12">
+              <p className="text-gray-600 dark:text-gray-400 text-lg">{t('projects.noProjects')}</p>
             </motion.div>
           )}
 
