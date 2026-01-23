@@ -116,7 +116,45 @@ Update all instances of URLs in:
 VITE_EMAILJS_SERVICE_ID=your_service_id
 VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
-VITE_SITE_URL=http://localhost:5173
+VITE_RESUME_URL_EN=https://drive.google.com/file/d/your-english-resume-id/view
+VITE_RESUME_URL_ES=https://drive.google.com/file/d/your-spanish-resume-id/view
+```
+
+### Production (GitHub Secrets)
+Set the same variables as GitHub repository secrets for automatic deployment:
+
+- `VITE_EMAILJS_SERVICE_ID`: Your EmailJS service ID
+- `VITE_EMAILJS_TEMPLATE_ID`: Your EmailJS template ID  
+- `VITE_EMAILJS_PUBLIC_KEY`: Your EmailJS public key
+- `VITE_RESUME_URL_EN`: URL to your English resume/CV
+- `VITE_RESUME_URL_ES`: URL to your Spanish resume/CV
+
+### Resume/CV URLs Setup
+
+You can use different types of URLs for your resume:
+
+**Option 1: Google Drive (Recommended)**
+1. Upload your resume to Google Drive
+2. Right-click and select "Get link"
+3. Make sure it's set to "Anyone with the link can view"
+4. Use the full Google Drive URL
+
+**Option 2: GitHub Repository**
+```env
+VITE_RESUME_URL_EN=https://github.com/yourusername/resume/raw/main/resume-en.pdf
+VITE_RESUME_URL_ES=https://github.com/yourusername/resume/raw/main/resume-es.pdf
+```
+
+**Option 3: External Hosting**
+```env
+VITE_RESUME_URL_EN=https://your-website.com/resume-en.pdf
+VITE_RESUME_URL_ES=https://your-website.com/resume-es.pdf
+```
+
+**Option 4: Public Folder (Local)**
+```env
+VITE_RESUME_URL_EN=/resume-en.pdf
+VITE_RESUME_URL_ES=/resume-es.pdf
 ```
 
 ### Production (GitHub Secrets)

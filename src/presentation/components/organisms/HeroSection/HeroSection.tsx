@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown, Download, Mail } from 'lucide-react';
 import { Button } from '@/presentation/components/atoms/Button/Button';
 import { useLanguage } from '@/shared/hooks/useLanguage';
+import { useResumeUrl } from '@/shared/hooks/useResumeUrl';
 import { fadeInUp } from '@/shared/utils/animations';
 
 /**
@@ -10,6 +11,7 @@ import { fadeInUp } from '@/shared/utils/animations';
  */
 export const HeroSection: React.FC = () => {
   const { t } = useLanguage();
+  const resumeUrl = useResumeUrl();
 
   const scrollToAbout = (): void => {
     const element = document.querySelector('#about');
@@ -23,6 +25,10 @@ export const HeroSection: React.FC = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleDownloadResume = (): void => {
+    window.open(resumeUrl, '_blank');
   };
 
   return (
@@ -83,7 +89,7 @@ export const HeroSection: React.FC = () => {
             <Button
               variant="outline"
               size="lg"
-              onClick={() => window.open('/resume.pdf', '_blank')}
+              onClick={handleDownloadResume}
             >
               <Download className="w-5 h-5 mr-2" />
               {t('hero.downloadResume')}
@@ -95,7 +101,7 @@ export const HeroSection: React.FC = () => {
             variants={fadeInUp}
             className="flex flex-wrap justify-center gap-4 mt-12"
           >
-            {['Java', 'Pyhton', 'NodeJS', 'Angular', 'React', 'TypeScript', 'AWS'].map((tech, index) => (
+            {['Java', 'Python', 'NodeJS', 'Angular', 'React', 'TypeScript', 'AWS'].map((tech, index) => (
               <motion.span
                 key={tech}
                 initial={{ opacity: 0, scale: 0.8 }}

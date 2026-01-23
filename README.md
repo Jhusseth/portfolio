@@ -117,11 +117,13 @@ src/
    cp .env.example .env
    ```
    
-   Fill in your EmailJS credentials:
+   Fill in your EmailJS credentials and resume URLs:
    ```env
    VITE_EMAILJS_SERVICE_ID=your_service_id
    VITE_EMAILJS_TEMPLATE_ID=your_template_id
    VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   VITE_RESUME_URL_EN=https://drive.google.com/file/d/your-english-resume-id/view
+   VITE_RESUME_URL_ES=https://drive.google.com/file/d/your-spanish-resume-id/view
    ```
 
 4. **Start development server**
@@ -206,6 +208,8 @@ All components automatically use the selected language through the `useLanguage`
    - `VITE_EMAILJS_SERVICE_ID`
    - `VITE_EMAILJS_TEMPLATE_ID`
    - `VITE_EMAILJS_PUBLIC_KEY`
+   - `VITE_RESUME_URL_EN`
+   - `VITE_RESUME_URL_ES`
 
 3. **Push to main branch**
    ```bash
