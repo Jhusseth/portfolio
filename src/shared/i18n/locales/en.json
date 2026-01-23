@@ -12,7 +12,7 @@
     "greeting": "Hello, I'm",
     "title": "Senior Software",
     "subtitle": "Engineer",
-    "description": "I craft exceptional digital experiences with modern web technologies, specializing in React, TypeScript, and scalable frontend architectures.",
+    "description": "I craft exceptional digital experiences with modern technologies, specializing in Java, Pyhton, NodeJS, Angular, React, TypeScript , and scalable architectures.",
     "getInTouch": "Get In Touch",
     "downloadResume": "Download Resume"
   },
@@ -21,8 +21,8 @@
     "subtitle": "Passionate about creating exceptional user experiences through clean code and innovative solutions",
     "myJourney": "My Journey",
     "description1": "With over 5 years of experience in frontend development, I've had the privilege of working with startups and established companies to build scalable, user-centric web applications that serve millions of users worldwide.",
-    "description2": "My expertise lies in React ecosystem, TypeScript, and modern web technologies. I'm passionate about clean architecture, performance optimization, and creating maintainable codebases that stand the test of time.",
-    "description3": "When I'm not coding, you'll find me contributing to open source projects, mentoring junior developers, or exploring the latest trends in web development and user experience design.",
+    "description2": "My expertise lies in Java ecosystem, Pyhton, NodeJS, Angular, React, TypeScript , and modern web technologies. I'm passionate about clean architecture, performance optimization, and creating maintainable codebases that stand the test of time.",
+    "description3": "When I'm not coding, you'll find me contributing to open source projects, mentoring junior developers, or exploring the latest trends in web development and design od modern solutions and architectures.",
     "whatDrivesMe": "What Drives Me",
     "values": {
       "cleanCode": {
@@ -30,8 +30,8 @@
         "description": "Writing maintainable, readable code that follows best practices and industry standards."
       },
       "userExperience": {
-        "title": "User Experience",
-        "description": "Creating intuitive interfaces that delight users and solve real-world problems."
+        "title": "Scalable Architectures",
+        "description": "Create modern and scalable architectures that solve real-world problems."
       },
       "continuousLearning": {
         "title": "Continuous Learning",
@@ -52,40 +52,69 @@
     "technologiesUsed": "Technologies Used:",
     "present": "Present",
     "experiences": {
-      "techInnovators": {
-        "company": "Tech Innovators Inc.",
-        "position": "Senior Software Developer",
-        "location": "San Francisco, CA",
-        "description": "Led frontend development for enterprise applications serving 100K+ users",
+      "sofkaTechnologies": {
+        "company": "Sofka Technologies",
+        "position": "Development Consultant",
+        "location": "Remote",
+        "description": "Led software development and adaptation projects using Java, Spring Boot, and Angular with clean architecture principles",
         "achievements": [
-          "Reduced bundle size by 40% through code splitting and optimization",
-          "Implemented micro-frontend architecture reducing deployment time by 60%",
-          "Mentored 5 junior developers and established code review processes",
-          "Built reusable component library adopted across 8 different projects"
+          "Designed and implemented custom IT solutions serving enterprise-level clients",
+          "Identified and proposed process optimizations improving development efficiency by 30%",
+          "Coordinated cross-functional teams ensuring solutions met quality standards and business requirements",
+          "Applied clean architecture patterns to maintain scalable and maintainable codebases"
         ]
       },
-      "digitalSolutions": {
-        "company": "Digital Solutions Ltd.",
-        "position": "Full Stack Developer",
-        "location": "New York, NY",
-        "description": "Developed and maintained multiple client projects using modern web technologies",
+      "teamInternational": {
+        "company": "Team International",
+        "position": "Full Stack Engineer",
+        "location": "Remote",
+        "description": "Developed full-stack applications with Java/Spring Boot backend and TypeScript/Angular frontend, implementing AWS cloud infrastructure",
         "achievements": [
-          "Built 12+ responsive web applications from concept to deployment",
-          "Improved application performance by 50% through optimization techniques",
-          "Integrated third-party APIs and payment gateways for e-commerce solutions",
-          "Collaborated with design team to implement pixel-perfect UI components"
+          "Architected and deployed AWS solutions using 15+ services including Lambda, ECS, DynamoDB, and API Gateway",
+          "Implemented Infrastructure as Code using CloudFormation and Terraform for automated deployments",
+          "Developed data processing pipelines using Python, AWS Glue, and Kinesis",
+          "Managed multi-database architecture with MySQL, DB2, and DynamoDB for optimal performance",
+          "Built scalable microservices architecture handling high-volume transactions"
         ]
       },
-      "startupXYZ": {
-        "company": "StartupXYZ",
-        "position": "Frontend Developer",
-        "location": "Austin, TX",
-        "description": "Early-stage startup focused on building innovative SaaS products",
+      "ceibaSoftwareHouse": {
+        "company": "Ceiba Software House",
+        "position": "Developer Architect",
+        "location": "Remote",
+        "description": "Architected and developed reactive microservices using Spring Boot with Reactive Commons and Angular frontend",
         "achievements": [
-          "Developed MVP that secured $2M in Series A funding",
-          "Implemented real-time features using WebSocket technology",
-          "Created responsive design system used across all company products",
-          "Optimized SEO resulting in 200% increase in organic traffic"
+          "Designed event-driven microservices architecture using RabbitMQ for inter-service communication",
+          "Implemented reactive programming patterns improving application responsiveness by 40%",
+          "Managed CI/CD pipelines and deployment automation using Azure DevOps",
+          "Led incident response and resolution for production applications ensuring 99.9% uptime",
+          "Established monitoring and alerting systems for proactive issue detection"
+        ]
+      },
+      "nevuSAS": {
+        "company": "Nevu S.A.S",
+        "position": "Co-Founder & Full Stack Engineer",
+        "location": "Cali, Colombia",
+        "description": "Co-founded fintech startup integrating blockchain technology with traditional financial services",
+        "achievements": [
+          "Built complete cloud infrastructure on AWS managing 10+ services for production environment",
+          "Integrated Polygon blockchain technology for secure financial transactions",
+          "Developed automated CI/CD pipelines using Docker, Jenkins, and SonarQube reducing deployment time by 70%",
+          "Created full-stack applications using Java/Spring Boot, Python/Django, Node.js, and React.js",
+          "Managed MySQL and MongoDB databases ensuring data integrity and optimal performance",
+          "Implemented AWS Cognito authentication system securing user access and data"
+        ]
+      },
+      "freelance": {
+        "company": "Freelance",
+        "position": "Backend Developer",
+        "location": "Cali, Colombia",
+        "description": "Provided backend development services for multiple clients building microservices and full-stack applications",
+        "achievements": [
+          "Developed Spring Cloud microservices architecture for distributed systems",
+          "Implemented comprehensive testing strategy using Mockito, JUnit, and integration tests achieving 85% code coverage",
+          "Built responsive web applications using Vue.js frontend framework",
+          "Created cross-platform mobile applications using React Native",
+          "Delivered projects on time and within budget for diverse client requirements"
         ]
       }
     }

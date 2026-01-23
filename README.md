@@ -103,8 +103,8 @@ src/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/senior-react-portfolio.git
-   cd senior-react-portfolio
+   git clone https://github.com/jhusseth/portfolio.git
+   cd portfolio
    ```
 
 2. **Install dependencies**

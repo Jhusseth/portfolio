@@ -115,7 +115,7 @@ export const ProjectsSection: React.FC = () => {
             <Button
               variant="outline"
               size="lg"
-              onClick={() => window.open('https://github.com/yourusername', '_blank')}
+              onClick={() => window.open('https://github.com/jhusseth', '_blank')}
             >
               {t('projects.viewAllGithub')}
             </Button>

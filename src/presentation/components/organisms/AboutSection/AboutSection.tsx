@@ -15,8 +15,8 @@ export const AboutSection: React.FC = () => {
 
   const stats = [
     { icon: Code, label: t('about.stats.experience'), value: '5+' },
-    { icon: Users, label: t('about.stats.projects'), value: '50+' },
-    { icon: Award, label: t('about.stats.certifications'), value: '8' },
+    { icon: Users, label: t('about.stats.projects'), value: '10+' },
+    { icon: Award, label: t('about.stats.certifications'), value: '5+' },
     { icon: Coffee, label: t('about.stats.coffee'), value: '∞' },
   ];
 

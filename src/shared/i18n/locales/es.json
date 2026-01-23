@@ -12,7 +12,7 @@
     "greeting": "Hola, soy",
     "title": "Senior Software",
     "subtitle": "Engineer",
-    "description": "Creo experiencias digitales excepcionales con tecnologías web modernas, especializándome en  Java, Pyhton, NodeJS, Angular, React, TypeScript y arquitecturas escalables.",
+    "description": "Creo experiencias digitales excepcionales con tecnologías modernas, especializándome en Java, Pyhton, NodeJS, Angular, React, TypeScript y arquitecturas escalables.",
     "getInTouch": "Contáctame",
     "downloadResume": "Descargar CV"
   },
@@ -21,8 +21,8 @@
     "subtitle": "Apasionado por crear experiencias de usuario excepcionales a través de código limpio y soluciones innovadoras",
     "myJourney": "Mi Trayectoria",
     "description1": "Con más de 5 años de experiencia en desarrollo frontend, he tenido el privilegio de trabajar con startups y empresas establecidas para construir aplicaciones web escalables y centradas en el usuario que sirven a millones de usuarios en todo el mundo.",
-    "description2": "Mi experiencia se centra en el ecosistema React, TypeScript y tecnologías web modernas. Me apasiona la arquitectura limpia, la optimización del rendimiento y la creación de bases de código mantenibles que resistan el paso del tiempo.",
-    "description3": "Cuando no estoy programando, me encontrarás contribuyendo a proyectos de código abierto, mentorizando desarrolladores junior, o explorando las últimas tendencias en desarrollo web y diseño de experiencia de usuario.",
+    "description2": "Mi experiencia se centra en el ecosistema Java, Pyhton, NodeJS, Angular, React, TypeScript  y tecnologías web modernas. Me apasiona la arquitectura limpia, la optimización del rendimiento y la creación de bases de código mantenibles que resistan el paso del tiempo.",
+    "description3": "Cuando no estoy programando, me encontrarás contribuyendo a proyectos de código abierto, mentorizando desarrolladores junior, o explorando las últimas tendencias en desarrollo web y diseño de soluciones y arquitecturas modernas.",
     "whatDrivesMe": "Lo que me Motiva",
     "values": {
       "cleanCode": {
@@ -30,8 +30,8 @@
         "description": "Escribir código mantenible y legible que siga las mejores prácticas y estándares de la industria."
       },
       "userExperience": {
-        "title": "Experiencia de Usuario",
-        "description": "Crear interfaces intuitivas que deleiten a los usuarios y resuelvan problemas del mundo real."
+        "title": "Arquitecturas Escalables",
+        "description": "Crear arquitecturas modernas y escalables que resuelvan problemas del mundo real."
       },
       "continuousLearning": {
         "title": "Aprendizaje Continuo",
@@ -52,40 +52,69 @@
     "technologiesUsed": "Tecnologías Utilizadas:",
     "present": "Presente",
     "experiences": {
-      "techInnovators": {
-        "company": "Tech Innovators Inc.",
-        "position": "Desarrollador React Senior",
-        "location": "San Francisco, CA",
-        "description": "Lideré el desarrollo frontend para aplicaciones empresariales que sirven a más de 100K usuarios",
+      "sofkaTechnologies": {
+        "company": "Sofka Technologies",
+        "position": "Consultor de Desarrollo",
+        "location": "Remoto",
+        "description": "Lideré proyectos de desarrollo y adaptación de software usando Java, Spring Boot y Angular con principios de arquitectura limpia",
         "achievements": [
-          "Reduje el tamaño del bundle en un 40% mediante división de código y optimización",
-          "Implementé arquitectura de micro-frontends reduciendo el tiempo de despliegue en un 60%",
-          "Mentoricé a 5 desarrolladores junior y establecí procesos de revisión de código",
-          "Construí una librería de componentes reutilizables adoptada en 8 proyectos diferentes"
+          "Diseñé e implementé soluciones IT personalizadas sirviendo clientes de nivel empresarial",
+          "Identifiqué y propuse optimizaciones de procesos mejorando la eficiencia del desarrollo en un 30%",
+          "Coordiné equipos multifuncionales asegurando que las soluciones cumplieran estándares de calidad y requisitos de negocio",
+          "Apliqué patrones de arquitectura limpia para mantener bases de código escalables y mantenibles"
         ]
       },
-      "digitalSolutions": {
-        "company": "Digital Solutions Ltd.",
-        "position": "Desarrollador Full Stack",
-        "location": "Nueva York, NY",
-        "description": "Desarrollé y mantuve múltiples proyectos de clientes usando tecnologías web modernas",
+      "teamInternational": {
+        "company": "Team International",
+        "position": "Ingeniero Full Stack",
+        "location": "Remoto",
+        "description": "Desarrollé aplicaciones full-stack con backend Java/Spring Boot y frontend TypeScript/Angular, implementando infraestructura cloud en AWS",
         "achievements": [
-          "Construí más de 12 aplicaciones web responsivas desde el concepto hasta el despliegue",
-          "Mejoré el rendimiento de aplicaciones en un 50% mediante técnicas de optimización",
-          "Integré APIs de terceros y pasarelas de pago para soluciones de comercio electrónico",
-          "Colaboré con el equipo de diseño para implementar componentes UI pixel-perfect"
+          "Arquitecturé y desplegué soluciones AWS usando más de 15 servicios incluyendo Lambda, ECS, DynamoDB y API Gateway",
+          "Implementé Infraestructura como Código usando CloudFormation y Terraform para despliegues automatizados",
+          "Desarrollé pipelines de procesamiento de datos usando Python, AWS Glue y Kinesis",
+          "Gestioné arquitectura multi-base de datos con MySQL, DB2 y DynamoDB para rendimiento óptimo",
+          "Construí arquitectura de microservicios escalable manejando transacciones de alto volumen"
         ]
       },
-      "startupXYZ": {
-        "company": "StartupXYZ",
-        "position": "Desarrollador Frontend",
-        "location": "Austin, TX",
-        "description": "Startup en etapa temprana enfocada en construir productos SaaS innovadores",
+      "ceibaSoftwareHouse": {
+        "company": "Ceiba Software House",
+        "position": "Arquitecto Desarrollador",
+        "location": "Remoto",
+        "description": "Arquitecturé y desarrollé microservicios reactivos usando Spring Boot con Reactive Commons y frontend Angular",
         "achievements": [
-          "Desarrollé MVP que aseguró $2M en financiación Serie A",
-          "Implementé características en tiempo real usando tecnología WebSocket",
-          "Creé sistema de diseño responsivo usado en todos los productos de la empresa",
-          "Optimicé SEO resultando en un aumento del 200% en tráfico orgánico"
+          "Diseñé arquitectura de microservicios orientada a eventos usando RabbitMQ para comunicación entre servicios",
+          "Implementé patrones de programación reactiva mejorando la capacidad de respuesta de aplicaciones en un 40%",
+          "Gestioné pipelines CI/CD y automatización de despliegues usando Azure DevOps",
+          "Lideré respuesta y resolución de incidentes para aplicaciones en producción asegurando 99.9% de disponibilidad",
+          "Establecí sistemas de monitoreo y alertas para detección proactiva de problemas"
+        ]
+      },
+      "nevuSAS": {
+        "company": "Nevu S.A.S",
+        "position": "Co-Fundador e Ingeniero Full Stack",
+        "location": "Cali, Colombia",
+        "description": "Co-fundé startup fintech integrando tecnología blockchain con servicios financieros tradicionales",
+        "achievements": [
+          "Construí infraestructura cloud completa en AWS gestionando más de 10 servicios para entorno de producción",
+          "Integré tecnología blockchain Polygon para transacciones financieras seguras",
+          "Desarrollé pipelines CI/CD automatizados usando Docker, Jenkins y SonarQube reduciendo tiempo de despliegue en 70%",
+          "Creé aplicaciones full-stack usando Java/Spring Boot, Python/Django, Node.js y React.js",
+          "Gestioné bases de datos MySQL y MongoDB asegurando integridad de datos y rendimiento óptimo",
+          "Implementé sistema de autenticación AWS Cognito asegurando acceso de usuarios y datos"
+        ]
+      },
+      "freelance": {
+        "company": "Freelance",
+        "position": "Desarrollador Backend",
+        "location": "Cali, Colombia",
+        "description": "Proporcioné servicios de desarrollo backend para múltiples clientes construyendo microservicios y aplicaciones full-stack",
+        "achievements": [
+          "Desarrollé arquitectura de microservicios Spring Cloud para sistemas distribuidos",
+          "Implementé estrategia de testing integral usando Mockito, JUnit y pruebas de integración logrando 85% de cobertura de código",
+          "Construí aplicaciones web responsivas usando framework frontend Vue.js",
+          "Creé aplicaciones móviles multiplataforma usando React Native",
+          "Entregué proyectos a tiempo y dentro del presupuesto para diversos requisitos de clientes"
         ]
       }
     }

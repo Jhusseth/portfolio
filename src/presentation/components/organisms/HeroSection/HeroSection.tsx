@@ -95,7 +95,7 @@ export const HeroSection: React.FC = () => {
             variants={fadeInUp}
             className="flex flex-wrap justify-center gap-4 mt-12"
           >
-            {['React', 'TypeScript', 'Next.js', 'Node.js', 'AWS'].map((tech, index) => (
+            {['Java', 'Pyhton', 'NodeJS', 'Angular', 'React', 'TypeScript', 'AWS'].map((tech, index) => (
               <motion.span
                 key={tech}
                 initial={{ opacity: 0, scale: 0.8 }}

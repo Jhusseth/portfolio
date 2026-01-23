@@ -98,7 +98,7 @@ A    185.199.111.153
 
 **For www subdomain**:
 ```
-CNAME    yourusername.github.io
+CNAME    jhusseth.github.io
 ```
 
 ### 4. Update URLs

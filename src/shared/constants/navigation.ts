@@ -13,22 +13,22 @@ export const NAVIGATION_ITEMS = [
 export const SOCIAL_LINKS = [
   {
     platform: 'github' as const,
-    url: 'https://github.com/yourusername',
+    url: 'https://github.com/jhusseth',
     username: '@yourusername',
   },
   {
     platform: 'linkedin' as const,
-    url: 'https://linkedin.com/in/yourprofile',
-    username: 'Your Name',
+    url: 'https://linkedin.com/in/jhusseth-sanchez',
+    username: 'Jhusseth',
   },
   {
     platform: 'twitter' as const,
-    url: 'https://twitter.com/yourusername',
-    username: '@yourusername',
+    url: 'https://twitter.com/jhussetharias',
+    username: '@jhussetharias',
   },
   {
     platform: 'email' as const,
-    url: 'mailto:your.email@example.com',
-    username: 'your.email@example.com',
+    url: 'mailto:jhusethsanchez@gmail.com.com',
+    username: 'jhusethsanchez@gmail.com.com',
   },
 ] as const;
