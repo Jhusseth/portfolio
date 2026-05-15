@@ -60,11 +60,18 @@ export const SkillsSection: React.FC = () => {
 
           {/* Skills by Category */}
           <div className="space-y-12">
-            {Object.entries(skillsByCategory).map(([category, skills]) => {
+            {Object.entries(skillsByCategory).map(([category, skills], index) => {
               if (!skills || skills.length === 0) return null;
 
               return (
-                <motion.div key={category} variants={fadeInUp} className="space-y-6">
+                <motion.div
+                  key={category}
+                  variants={fadeInUp}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.1 }}
+                  className="space-y-6"
+                >
                   <h3 className="text-2xl font-semibold text-gray-900 dark:text-white text-center">
                     {categoryLabels[category as SkillCategory]}
                   </h3>

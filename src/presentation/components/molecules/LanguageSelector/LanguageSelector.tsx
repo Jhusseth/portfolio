@@ -7,6 +7,24 @@ import { cn } from '@/shared/utils/cn';
 /**
  * Language selector component with flag icons
  */
+const FLAGS: Record<Language, React.ReactNode> = {
+  en: (
+    <svg width="22" height="16" viewBox="0 0 22 16" className="inline-block flex-shrink-0">
+      <rect width="22" height="16" fill="#fff" />
+      {[0, 2.46, 4.92, 7.38, 9.85, 12.31, 14.77].map((y) => (
+        <rect key={y} width="22" height="1.23" y={y} fill="#b22234" />
+      ))}
+      <rect width="8.8" height="8" fill="#3c3b6e" />
+    </svg>
+  ),
+  es: (
+    <svg width="22" height="16" viewBox="0 0 22 16" className="inline-block flex-shrink-0">
+      <rect width="22" height="16" fill="#c60b1e" />
+      <rect width="22" height="8" y="4" fill="#ffc400" />
+    </svg>
+  ),
+};
+
 export const LanguageSelector: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { currentLanguage, changeLanguage, getCurrentLanguageOption, languages } = useLanguage();
@@ -39,8 +57,8 @@ export const LanguageSelector: React.FC = () => {
         whileTap={{ scale: 0.95 }}
         aria-label="Select language"
       >
-        <span className="text-lg">{currentOption.flag}</span>
-        <span className="text-sm font-medium text-gray-700 dark:text-gray-300 hidden sm:block">
+        {FLAGS[currentOption.code]}
+        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
           {currentOption.code.toUpperCase()}
         </span>
         <ChevronDown
@@ -70,7 +88,7 @@ export const LanguageSelector: React.FC = () => {
                 )}
                 whileHover={{ x: 4 }}
               >
-                <span className="text-lg">{language.flag}</span>
+                {FLAGS[language.code]}
                 <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                   {language.name}
                 </span>
